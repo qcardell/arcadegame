@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div>
+		<header class="header">
+			<h2>Player 1</h2>
+		</header>
+	<ul class="player">
+		<li class="scoreboard">
+		<a>Score:</a>
+		<a class="score"> 0 </a>
+		</li>
+		<li class="health">Health: 
+			<i class="fas fa-heart healthImg"></i>
+			<i class="fas fa-heart healthImg"></i>
+			<i class="fas fa-heart healthImg"></i>
+			<!-- <img class="healthImg" src="images/Heart.png">
+			<img class="healthImg" src="images/Heart.png">
+			<img class="healthImg" src="images/Heart.png">-->
+		</li>
+		<li>
+			<a class="lives">Lives: </a>
+			<a class="livesnum">3</a>
+		</li>
+	</ul>
+	</div>
+	  <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class='row modal-content'>
+              <div class='col-md-12 '>
+                <span class="close">&times;</span>
+                <i class="fa fa-check-circle"></i>
+                <p class='l1 modaltext'>Some text in the Modal..</p>
+                <p class='modaltext'>Some text in the Modal..</p>
+                <p class='modaltext'>Some text in the Modal..</p>     
+                <p class='modaltext'>Some text in the Modal..</p>  
+                <button id='myBtn'>Play Again</button>   
+              </div>
+            </div>
+          </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>

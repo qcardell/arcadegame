@@ -1,0 +1,128 @@
+html, body{
+	height:100%;
+}
+
+body {
+    text-align: center;
+	min-height:100%;
+}
+
+.player{
+    list-style: none;
+	font-size:2em;
+	padding-inline-start: 0px
+}
+.player li{
+	text-align: center;
+	display: inline
+}
+
+.healthImg{
+	height:2%;
+	width:2%;
+	vertical-align: text-bottom;
+}
+
+.player .scoreboard{
+	margin-right:20px;
+}
+
+.health{
+	font-color:red;
+	color:red;
+}
+
+.lives{
+	margin-left:20px;
+}
+
+.healthImg.nodisplay{
+	display:none;
+}
+
+header{
+	display:inline;
+	color:red;
+}
+
+.selector{
+	height:5%;
+	width:5%;
+}
+.energy{
+	white-space: nowrap;
+	display: inline;
+}
+.energy img{
+	height:10%;
+	width:2%;
+	float:left;
+	vertical-align:bottom;
+}
+
+.row {
+    display: flex;
+	width:10%;
+
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 0px;
+	
+}
+
+
+
+
+
+/*
+*The Modal (background) 
+*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*
+*Modal Content 
+*/
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 100px;
+  border: 1px solid #888;
+  width: 46%;
+  height:85%;
+}
+
+/*
+*The Close Button 
+*/
+.close {
+  color: #aaaaaa;
+  float: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content{
+  color:black;
+}
