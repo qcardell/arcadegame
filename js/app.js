@@ -1,3 +1,4 @@
+"use strict";
 let score = document.getElementsByClassName('score')[0];
 let lives = document.getElementsByClassName('livesnum')[0];
 let hearts = document.querySelectorAll('.healthImg');
@@ -98,28 +99,28 @@ Player.prototype.render = function(){
 Player.prototype.handleInput = function(k){
 	switch (k){
 		case'left':
-			if(player.x>20){
-				player.x = player.x-90;
+			if(this.x>20){
+				this.x = player.x-90;
 			}
 			break;
 		case'up':
-			player.y = player.y-90;
+			this.y = this.y-90;
 			break;
 		case'right':
-			if(player.x<380){
-			player.x = player.x+90;
+			if(this.x<380){
+			this.x = player.x+90;
 			}
 			break;
 		case'down':
-			if(player.y<400){
-				player.y = player.y+90;
+			if(this.y<400){
+				this.y = player.y+90;
 			}
 			break;
 	}
 	//console.log(player.x + ", " + player.y);
-	if(player.y===-50){
-		player.x = 200;
-		player.y = 400;
+	if(this.y===-50){
+		this.x = 200;
+		this.y = 400;
 		score.text=parseInt(score.text)+1;
 		allEnemies.forEach(function(enemy) {
 				enemy.y=radFunction();
