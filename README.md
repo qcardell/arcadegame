@@ -32,4 +32,4 @@ Graphics:
 
 - Provide from Udacity Nano degree program.
 
-![](JavaScript_Frogger.ppng)
+![](JavaScript_Frogger.png)
